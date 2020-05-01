@@ -1,0 +1,590 @@
+/*
+Theme Name: Hogwarts
+Theme URI: https://github.com/ZelihaArslan/
+Author: Zeliha Arslan
+Author URI: https://github.com/ZelihaArslan/
+Description: Minimal Wordpress Hogwarts Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hogwarts
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others. 
+*/
+
+
+
+
+
+/*---------------------------
+# General Settings
+-----------------------------*/
+
+body {
+    font-family: 'Nunito', sans-serif;
+
+}
+h1,h2, h3, h4, h5, h6 a {
+    font-family: 'Alegreya', serif;
+    color: #e74c3c;
+}
+
+p {
+  font-size: 13px;
+}
+
+h2 {font-size:32px;}
+h3 {font-size:22px;}
+h4 {font-size:18px;}
+h5 {font-size:15px;}
+
+.section-box {
+    padding: 100px;;
+}
+
+.section-top {
+    margin-bottom: 30px;
+}
+
+.section-top hr {
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    background-color:#e74c3c;
+    border: none;
+}
+
+
+/*---------------------------
+#Navigation
+-----------------------------*/
+.navbar-brand{
+    transition: all .5s;;
+}
+
+
+.navbar-brand:hover {
+    color: #e74c3c!important;
+}
+
+nav.navbar-container{
+    padding: 20px 0 20px 0;
+}
+
+#mainNav {
+    background-color:transparent;
+    
+}
+
+
+#mainNav .navbar-nav .nav-item .nav-link{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 10px;
+    letter-spacing: 1px;
+    color: white;
+    transition: all .5s;;
+}
+
+#mainNav  .navbar-nav .nav-item .nav-link:hover {
+    color:#e74c3c;
+}
+
+nav.shrink {
+    padding: 0;
+    background-color: #e74c3c!important;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #e74c3c;
+}
+
+nav.shrink .navbar-nav .nav-item .nav-link:hover,
+nav.shrink .navbar-brand:hover {
+    color: black!important;
+}
+
+
+
+.navbar-brand.shrink,
+.navbar-container.shrink,
+.navbar-fixed-top.shrink,
+navbar-brand,
+.navbar-container {
+    transition: .8s;
+}
+
+
+
+
+/*---------------------------
+# Hero Section
+-----------------------------*/
+
+#hero {
+    text-align: center;
+    color:white;
+    background: linear-gradient(rgba(20, 20, 20, .8),rgba(20, 20, 20, .8)),
+    url("../img/hp15.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#hero .container {
+    display: table;
+    height: 100vh;
+}
+
+#hero .intro-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#hero .intro-heading {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-weight: 200;
+}
+#hero .intro-heading span {
+    color: #e74c3c;
+    font-size: 62px;
+}
+
+.btn-main {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    margin:10px;
+    border: 2px solid #fff;
+    color:#e74c3c;
+    transition: all.5s;
+}
+
+.btn-main:hover {
+    background: #e74c3c;
+    border: 2px solid #e74c3c;
+    color:#fff;
+}
+
+
+/*---------------------------
+# Who Am I  Section
+-----------------------------*/
+
+#whoweare {
+    background-color: #f2f2f2;
+}
+.whoweare-item {
+    padding: 60px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.whoweare-item i{
+    font-size: 42px;
+    margin-bottom: 10px;
+    color:#e74c3c;
+}
+
+.whoweare-item hr {
+    width: 45px;
+    height: 2px;
+    background-color: #e74c3c;
+    border:none;
+    margin: 0 auto;
+}
+
+.whoweare-item p {
+    margin-top: 20px;
+}
+
+.whoweare-item:hover {
+    background-color :#e74c3c;
+    cursor: pointer;
+
+}
+
+.whoweare-item:hover i,
+.whoweare-item:hover  h3,
+.whoweare-item:hover  p{
+    color :#fff;
+} 
+
+.whoweare-item:hover hr {
+    background-color: #fff;
+    width: 75px;
+}
+
+.whoweare-item:hover i {
+    transform: translateY(-20px);
+} 
+
+.whoweare-item,
+.whoweare-item i,
+.whoweare-item hr {
+    transition: all .5s ease-in-out;
+}
+
+/*---------------------------
+# Statement Section
+-----------------------------*/
+
+#statement {
+    background: linear-gradient(rgba(20, 20, 20, .8),rgba(20, 20, 20, .8)),
+    url("../img/hp14.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+#statement h4 {
+    color:#fff;
+}
+
+/*---------------------------
+# Latest Projects Section
+-----------------------------*/
+
+#latestprojects {
+    background-color:#f2f2f2;
+}
+
+#latestprojects .project-text {
+    padding: 30px;
+}
+
+#latestprojects .project-text hr {
+    border-color: #fff;
+    border-width: 2px;
+    width:25%;
+    transition:all .5s;
+}
+
+#latestprojects .project-text:hover hr {
+    width:50%;
+}
+
+.bg-orange {
+    background-color: #e74c3c;
+}
+
+.btn-white {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px, 15px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all .5s;
+}
+
+.btn-white:hover {
+    background:  #fff;
+    color: #e74c3c;
+    border: 1px solid #fff;
+}
+
+/*---------------------------
+# Footer Section
+-----------------------------*/
+
+footer {
+    background-color:  #000;
+    padding: 20px 0 10px;
+    font-size: 14px;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+/*---------------------------
+# Inside Hero About Section
+-----------------------------*/
+
+.page-image {
+    display: table;
+    width: 100%;
+}
+.page-image-about {
+    background: linear-gradient(rgba(20, 20, 20, .8),rgba(20, 20, 20, .8)),
+    url("../img/aboutBg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.page-title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-weight: 200;
+}
+
+/*---------------------------
+#  About Us Section
+-----------------------------*/
+#aboutus {
+    background-color: #f2f2f2;
+}
+
+#aboutus .project-text {
+    padding: 30px;
+}
+
+/*---------------------------
+#  TEAM Section
+-----------------------------*/
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.team-member img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+
+}
+
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width:50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529;
+    transition: all .5s;  
+}
+
+ul.social-buttons li a:hover {
+    background-color: #e74c3c;
+
+}
+
+/*---------------------------
+#  Works Section
+-----------------------------*/
+
+.page-image-works {
+    background: linear-gradient(rgba(20, 20, 20, .8),rgba(20, 20, 20, .8)),
+    url("../img/foto16.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.works-item {
+    right: 0;
+    margin: 0 0 15px;
+
+}
+.works-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.works-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(231, 76, 60, 0.8);
+    transition: all .5s;
+}
+
+.works-hover:hover {
+    opacity: 1;
+}
+
+.works-hover-content {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color:white;
+}
+
+.works-hover-content i {
+    margin-top: -12px;
+}
+
+.works-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+}
+.works-caption h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+.works-caption p {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+}
+
+/*---------------------------
+#  Blog Section
+-----------------------------*/
+
+.page-image-blog {
+    background: linear-gradient(rgba(20, 20, 20, .8),rgba(20, 20, 20, .8)),
+    url("../img/blog.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.blog-item {
+    right: 0;
+    margin: 0 0 15px;
+
+}
+.blog-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.blog-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(231, 76, 60, 0.8);
+    transition: all .5s;
+}
+
+.blog-hover:hover {
+    opacity: 1;
+}
+
+.blog-hover-content {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color:white;
+}
+
+.blog-hover-content i {
+    margin-top: -12px;
+}
+
+.blog-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.blog-caption h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+.blog-caption p {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+} 
+
+/*---------------------------
+#  Contact Section
+-----------------------------*/
+
+.page-image-contact {
+    background: linear-gradient(rgba(20, 20, 20, .8),rgba(20, 20, 20, .8)),
+    url("../img/hp20.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 20px;
+}
+.form-group input .form-control {
+    height: auto;
+}
+
+.form-group textarea.form-control {
+    height: 180px;
+}
+
+.form-control:focus {
+    border-color: #e74c3c;
+    box-shadow: none;
+}
+
+.btn-contact {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-contact:hover {
+    background-color: #fff;
+    color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
